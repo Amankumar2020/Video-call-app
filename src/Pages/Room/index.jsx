@@ -9,7 +9,8 @@ const RoomPage = () => {
     const appID = 975120059;
     const serverSecret = "55583875e509baaf8373ea6940c23982";
 
-    const TOKEN = ZegoUIKitPrebuilt.generateKitTokenForTest(
+    // const TOKEN = ZegoUIKitPrebuilt.generateKitTokenForTest(
+      const TOKEN = generatePrebuiltToken(
       appID,
       serverSecret,
       roomId,
@@ -17,8 +18,8 @@ const RoomPage = () => {
       "Your name"
     );
 
-    const zc = ZegoUIKitPrebuilt.create(TOKEN);
-    zc.joinRoom({
+    const zp = ZegoUIKitPrebuilt.create(TOKEN);
+    zp.joinRoom({
       container: element,
       sharedLinks: [
         {
