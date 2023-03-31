@@ -14,7 +14,7 @@ const RoomPage = () => {
       serverSecret,
       roomId,
       Date.now().toString(),
-      "Aman kumar"
+      "Your name"
     );
 
     const zc = ZegoUIKitPrebuilt.create(TOKEN);
@@ -23,7 +23,7 @@ const RoomPage = () => {
       sharedLinks: [
         {
           name: "Copy Link",
-          url: `http://localhost:3000/room/${roomId}`,
+          url: `https://video-call-app-theta.vercel.app//room/${roomId}`,
         },
       ],
       scenario: {
