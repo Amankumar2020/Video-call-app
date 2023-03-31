@@ -27,7 +27,7 @@ const RoomPage = () => {
         },
       ],
       scenario: {
-        mode: ZegoUIKitPrebuilt.VideoConference,
+        mode: ZegoUIKitPrebuilt.OneONoneCall,
       },
       showScreenSharingButton: true,
     });
