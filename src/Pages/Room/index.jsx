@@ -9,8 +9,8 @@ const RoomPage = () => {
     const appID = 975120059;
     const serverSecret = "55583875e509baaf8373ea6940c23982";
 
-    // const TOKEN = ZegoUIKitPrebuilt.generateKitTokenForTest(
-      const TOKEN = generatePrebuiltToken(
+    const TOKEN = ZegoUIKitPrebuilt.generateKitTokenForTest(
+      // const TOKEN = generatePrebuiltToken(
       appID,
       serverSecret,
       roomId,
